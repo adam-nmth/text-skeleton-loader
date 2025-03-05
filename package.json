@@ -1,7 +1,12 @@
 {
+  "author": {
+    "name": "Adam Nemeth",
+    "url": "https://adamnmth.com"
+  },
+  "license": "MIT",
   "name": "text-skeleton-loader",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
