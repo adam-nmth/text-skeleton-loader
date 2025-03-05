@@ -10,9 +10,12 @@ const letterListStyle = {
 };
 const getRandomNr = () => Math.floor(Math.random() * (15 - 2 + 1)) + 2;
 const splittedText = lorem.split('');
+const shiftArray = (arr: string[], n: number) => {
+  const length = arr.length;
+  const shift = n % length;
+  return [...arr.slice(shift), ...arr.slice(0, shift)];
+};
 
-// TODO: add logic to start texts from random letter, so it doesnt look so uniform on start
-// TODO: fix margin between letters
 const SlotMachineWord = memo(({ textArr }: { textArr: string[] }) => {
   return (
     <div className="slot-container">
@@ -54,7 +57,7 @@ export const SlotMachine = memo(
       >
         {arr.map((x) => (
           <SlotMachineWord
-            textArr={splittedText}
+            textArr={shiftArray(splittedText, getRandomNr())}
             key={`slotMachine_${getRandomNr()}_${x}`}
           />
         ))}

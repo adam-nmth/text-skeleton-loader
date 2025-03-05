@@ -1,1 +1,1 @@
-export const lorem = 'Lorem Ipsum';
+export const lorem = 'AbcdefgHik';

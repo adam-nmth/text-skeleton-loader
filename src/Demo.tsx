@@ -79,10 +79,18 @@ const ProductThumb = () => {
 export const Demo = () => {
   const [isLoading, setIsLoading] = useState(true);
 
+  const startLoading = () => {
+    setTimeout(() => {
+      setIsLoading(true);
+      finishLoading();
+    }, 3000);
+  };
+
   const finishLoading = () => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+      startLoading();
+    }, 7000);
   };
 
   useEffect(() => {
