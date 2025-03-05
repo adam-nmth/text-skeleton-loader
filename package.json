@@ -1,7 +1,12 @@
 {
+  "author": {
+    "name": "Adam Nemeth",
+    "url": "https://adamnmth.com"
+  },
+  "license": "MIT",
   "name": "text-skeleton-loader",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,6 +15,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^12.4.10",
+    "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
