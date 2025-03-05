@@ -1,10 +1,10 @@
 import './App.css';
-import SlotMachine from './BasicScaler';
+import { Demo } from './Demo';
 
 export default function App() {
   return (
     <>
-      <SlotMachine />
+      <Demo />
     </>
   );
 }

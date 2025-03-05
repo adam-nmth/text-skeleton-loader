@@ -7,11 +7,9 @@
 }
 
 .slot-container {
-  height: 1lh;
+  height: 0.75lh;
   overflow: hidden;
   display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
   position: relative;
   width: auto; /* Allow it to expand based on the content */
   min-width: 1ch; /* Minimum width for a single character */
@@ -19,11 +17,14 @@
   line-height: 1;
 }
 
-@keyframes slotScroll {
+@keyframes glow {
   0% {
-    transform: translateY(0%);
+    background-color: lightgray;
+  }
+  50% {
+    background-color: #eeeeee; /* Lighter gray */
   }
   100% {
-    transform: translateY(-100%);
-  } /* Scroll up */
+    background-color: lightgray;
+  }
 }
